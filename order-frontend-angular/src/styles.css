@@ -1,3 +1,5 @@
+
+
 /* You can add global styles to this file, and also import other style files */
 @import url(http://fonts.googleapis.com/css?family=Gochi+Hand);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,400,300,700);
@@ -253,12 +255,12 @@ button, input, select, textarea {
 }
 
 a {
-  color: #1148d6;
+  color: #fbfbfc;
   text-decoration: none
 }
 
 a:focus, a:hover {
-  color: #1148d6;
+  color: #fbfbfc;
   text-decoration: underline
 }
 
@@ -320,7 +322,7 @@ hr {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 700;
   line-height: 1.1;
-  color: #1148d6
+  color: #fbfbfc
 }
 
 .h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, .h4 .small, .h4 small, .h5 .small, .h5 small, .h6 .small, .h6 small, h1 .small, h1 small, h2 .small, h2 small, h3 .small, h3 small, h4 .small, h4 small, h5 .small, h5 small, h6 .small, h6 small {
@@ -401,11 +403,11 @@ cite {
 }
 
 .text-primary {
-  color: #1148d6
+  color: #fbfbfc
 }
 
 .text-primary:hover {
-  color: #1148d6
+  color: #fbfbfc
 }
 
 .text-warning {
@@ -6357,8 +6359,8 @@ body {
 }
 
 .colored-background {
-  color: #fff;
-  background-color: #1148d6
+  color: #1477d9;
+  background-color: #fcfcff
 }
 
 .hugs-bottom {
