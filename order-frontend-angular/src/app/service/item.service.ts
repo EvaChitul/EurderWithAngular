@@ -19,4 +19,8 @@ export class ItemService {
   getItems(): Observable<any> {
     return this.http.get<Item[]>(this.urlItems).pipe(map(response => response.sort((a: Item, b: Item) => a.name.localeCompare(b.name))));
   }
+
+  addItem(item: Item){
+    return this.http.post(this.urlItems, item);
+  }
 }

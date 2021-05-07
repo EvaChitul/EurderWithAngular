@@ -327,7 +327,7 @@ hr {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 700;
   line-height: 1.1;
-  color: #fbfbfc
+  color: #1b1b1c
 }
 
 .h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, .h4 .small, .h4 small, .h5 .small, .h5 small, .h6 .small, .h6 small, h1 .small, h1 small, h2 .small, h2 small, h3 .small, h3 small, h4 .small, h4 small, h5 .small, h5 small, h6 .small, h6 small {
@@ -2072,14 +2072,14 @@ textarea.input-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #da1d90;
-  border-color: #c31a81
+  background-color: #77a5dd;
+  border-color: #77a5dd
 }
 
 .btn-primary.active, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open .dropdown-toggle.btn-primary {
   color: #fff;
-  background-color: #b61878;
-  border-color: #8d135d
+  background-color: #77a5dd;
+  border-color: #77a5dd
 }
 
 .btn-primary.active, .btn-primary:active, .open .dropdown-toggle.btn-primary {
@@ -2087,12 +2087,12 @@ textarea.input-lg {
 }
 
 .btn-primary.disabled, .btn-primary.disabled.active, .btn-primary.disabled:active, .btn-primary.disabled:focus, .btn-primary.disabled:hover, .btn-primary[disabled], .btn-primary[disabled].active, .btn-primary[disabled]:active, .btn-primary[disabled]:focus, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary.active, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:hover {
-  background-color: #da1d90;
-  border-color: #c31a81
+  background-color: #77a5dd;
+  border-color: #77a5dd
 }
 
 .btn-primary .badge {
-  color: #da1d90;
+  color: #77a5dd;
   background-color: #fff
 }
 
@@ -4524,11 +4524,11 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 }
 
 .label-primary {
-  background-color: #da1d90
+  background-color: #59a8ec
 }
 
 .label-primary[href]:focus, .label-primary[href]:hover {
-  background-color: #ad1772
+  background-color: #59a8ec
 }
 
 .label-success {

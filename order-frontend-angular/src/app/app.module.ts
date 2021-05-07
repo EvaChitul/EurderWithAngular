@@ -9,7 +9,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {ItemService} from './service/item.service';
 import { CustomerComponent } from './customer/customer.component';
 import { ItemNameFilterPipe } from './pipes/item-name-filter.pipe';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { CustomerNameFilterPipe } from './pipes/customer-name-filter.pipe';
 
 @NgModule({
@@ -25,7 +25,8 @@ import { CustomerNameFilterPipe } from './pipes/customer-name-filter.pipe';
     LayoutModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [ItemService],
   bootstrap: [AppComponent]

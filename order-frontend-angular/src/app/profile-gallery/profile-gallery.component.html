@@ -12,18 +12,47 @@
       </div>
     </div>
   </div>
+
+  <div class="col-md-3">
+    <section class="tiny-dialog">
+      <div class="form-group">
+        <label for="name">Find Item</label>
+        <input id="name"
+               name="name"
+               class="form-control"
+               placeholder="Filter by name"
+               [(ngModel)]="searchText">
+      </div>
+    </section>
+
+    <section id = "itemProfile" class="tiny-dialog fader">
+      <div class = 'form-group'>
+        <h4>Add an Item</h4>
+        <form [formGroup]="createItemForm" (ngSubmit)="onSubmit()">
+          <label>Name</label>
+          <input for = "name" type="text" class = "form-control" formControlName="name" placeholder="Name">
+
+          <label>Description</label>
+          <input for = "kind" type="text" class = "form-control" formControlName="description" placeholder="Description">
+
+          <!--        <label>Image</label>-->
+          <!--        <input for = "image" type="text" class = "form-control" formControlName="image" placeholder="Image">-->
+
+          <label>Price (€)</label>
+          <input for = "profiletext" type=number class = "form-control" formControlName="price" placeholder="Price">
+
+          <label>Stock</label>
+          <input for = "profiletext" type=number class = "form-control" formControlName="stock" placeholder="Stock">
+          <!--              <label>Popularity</label>-->
+          <!--              <input for = "popularity" type="text" class = "form-control" formControlName="popularity" placeholder="Popularity">-->
+
+          <button type="submit" class = "btn btn-primary">Add Item</button>
+        </form>
+
+      </div>
+    </section>
+  </div>
+
 </div>
 
-<div class="col-md-3">
-  <section class="tiny-dialog">
-    <h3>Find item</h3>
-    <div class="form-group">
-      <label for="name">Items</label>
-      <input id="name"
-             name="name"
-             class="form-control"
-             placeholder="Filter by name"
-             [(ngModel)]="searchText">
-    </div>
-  </section>
-</div>
+
