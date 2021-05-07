@@ -1,0 +1,15 @@
+<div class="external">
+  <div class="row">
+    <div id="customers">
+      <div class="customers">
+        <div class="gallery-pet fader" *ngFor = "let customer of customers">
+          <img class="profile-picture" [src]="'https://pettinder.herokuapp.com/images/kamiel.jpg'">
+          <div class="overlay">
+            <div class="overlay-text">{{customer.firstname}} {{customer.lastname}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

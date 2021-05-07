@@ -32,7 +32,12 @@ body {
 }
 
 a {
-  background: 0 0
+  background: 0 0;
+  color: black;
+  font-weight: 50;
+  display: inline-flex;
+  padding-right: 10px;
+  font-family: SansSerif;
 }
 
 a:active, a:hover {
@@ -254,13 +259,13 @@ button, input, select, textarea {
   line-height: inherit
 }
 
-a {
-  color: #fbfbfc;
-  text-decoration: none
-}
+/*a {*/
+/*  color: #fbfbfc;*/
+/*  text-decoration: none*/
+/*}*/
 
 a:focus, a:hover {
-  color: #fbfbfc;
+  color: #bbbbec;
   text-decoration: underline
 }
 
@@ -6426,7 +6431,7 @@ body {
 .gallery-pet {
   display: inline-block;
   position: relative;
-  line-height: 250px;
+  line-height: 30px;
   margin: 10px
 }
 
@@ -6441,11 +6446,11 @@ body {
 
 .overlay-text {
   color: #fff;
-  margin-top: -60px;
+  margin-top: 0px;
   text-align: center;
   font-weight: 100;
   font-family: Lato, sans-serif;
-  font-size: 40px;
+  font-size: 35px;
   font-style: italic
 }
 

@@ -7,11 +7,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { ProfileGalleryComponent } from './profile-gallery/profile-gallery.component';
 import {HttpClientModule} from '@angular/common/http';
 import {ItemService} from './service/item.service';
+import { CustomerComponent } from './customer/customer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileGalleryComponent
+    ProfileGalleryComponent,
+    CustomerComponent
   ],
     imports: [
         BrowserModule,
