@@ -1,14 +1,12 @@
-<header class="colored-background header">
-  <div>
+<nav class="navbar navbar-expand-lg navbar-light bg-white"  >
   <img class="logo" src="assets/images/logo.png">
-  {{titleProject}}
+<!--  <h2>Örder</h2>-->
+
+  <div class="navbar-collapse justify-content-end">
+    <ul class="navbar-nav">
+      <li class="nav-item mr-1"> <a class="btn btn-primary" routerLink="" role="button">Home</a> </li>
+      <li class="nav-item mr-1"> <a class="btn btn-outline-primary btn-primary" routerLink="/items" role="button">Items</a> </li>
+      <li class="nav-item mr-1"> <a class="btn btn-outline-primary btn-primary" routerLink="/customers" role="button">Customers</a> </li>
+    </ul>
   </div>
-
-    <nav>
-      <a routerLink="">Home</a>
-      <a routerLink="/items">Items</a>
-      <a routerLink="/customers">Customers</a>
-    </nav>
-
-</header>
-
+</nav>

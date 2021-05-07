@@ -1,18 +1,27 @@
-<h2>Items</h2>
-<div class="container-fluid">
-  <div class="row">
-    <div id="gallery" class="col-md-9">
-      <div class="gallery">
-        <div class="gallery-pet fader" *ngFor="let item of items | itemNameFilter: searchText">
-          <img class="profile-picture" [src]="'https://pettinder.herokuapp.com/images/kamiel.jpg'">
-          <div class="overlay">
-            <div class="overlay-text">{{item.name}} Price: €{{item.price}} </div>
+<div class="row justify-content-center mb-5">
+  <h1 class="text-center text-white">Items</h1>
+</div>
+
+  <div class="row m-5">
+    <div class="col-md-3" *ngFor="let item of items | itemNameFilter: searchText">
+      <div class="card mb-4 border-white">
+        <div class="card-body">
+          <h2 class ="card-title">{{item.name}}</h2>
+          <img src="assets/images/colour-laptops.jpg" alt="" class="img-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="card-text d-flex justify-content-between">
+                <span>Price: €{{item.price}}</span>
+                <span>Stock: {{item.stock}}</span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
+<div class="row">
   <div class="col-md-3">
     <section class="tiny-dialog">
       <div class="form-group">
@@ -52,7 +61,8 @@
       </div>
     </section>
   </div>
-
 </div>
+
+
 
 
