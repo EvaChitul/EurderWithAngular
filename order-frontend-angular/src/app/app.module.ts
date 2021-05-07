@@ -8,19 +8,25 @@ import { ProfileGalleryComponent } from './profile-gallery/profile-gallery.compo
 import {HttpClientModule} from '@angular/common/http';
 import {ItemService} from './service/item.service';
 import { CustomerComponent } from './customer/customer.component';
+import { ItemNameFilterPipe } from './pipes/item-name-filter.pipe';
+import {FormsModule} from "@angular/forms";
+import { CustomerNameFilterPipe } from './pipes/customer-name-filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileGalleryComponent,
-    CustomerComponent
+    CustomerComponent,
+    ItemNameFilterPipe,
+    CustomerNameFilterPipe
   ],
-    imports: [
-        BrowserModule,
-        LayoutModule,
-        AppRoutingModule,
-      HttpClientModule
-    ],
+  imports: [
+    BrowserModule,
+    LayoutModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
+  ],
   providers: [ItemService],
   bootstrap: [AppComponent]
 })

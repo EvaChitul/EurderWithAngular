@@ -1,8 +1,9 @@
+<h2>Customers</h2>
 <div class="external">
   <div class="row">
     <div id="customers">
       <div class="customers">
-        <div class="gallery-pet fader" *ngFor = "let customer of customers">
+        <div class="gallery-pet fader" *ngFor = "let customer of customers | customerNameFilter: searchText">
           <img class="profile-picture" [src]="'https://pettinder.herokuapp.com/images/kamiel.jpg'">
           <div class="overlay">
             <div class="overlay-text">{{customer.firstname}} {{customer.lastname}}</div>
@@ -13,3 +14,16 @@
   </div>
 </div>
 
+<div class="col-md-3">
+  <section class="tiny-dialog">
+    <h3>Find customer</h3>
+    <div class="form-group">
+      <label for="name">Customers</label>
+      <input id="name"
+             name="name"
+             class="form-control"
+             placeholder="Filter by lastname"
+             [(ngModel)]="searchText">
+    </div>
+  </section>
+</div>

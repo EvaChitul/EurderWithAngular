@@ -10,8 +10,11 @@ import {Item} from '../../models/item';
 export class ProfileGalleryComponent implements OnInit {
 
   items: Item[] = [];
+  searchText: string;
 
-  constructor(private itemService: ItemService) { }
+  constructor(private itemService: ItemService) {
+    this.searchText = '';
+  }
 
   ngOnInit(): void {
     this.getItems();

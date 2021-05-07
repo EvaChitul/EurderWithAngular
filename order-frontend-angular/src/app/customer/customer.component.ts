@@ -10,8 +10,11 @@ import {Customer} from '../../models/customer';
 export class CustomerComponent implements OnInit {
 
   customers: Customer[] = [];
+  searchText: string;
 
-  constructor(private customerService: CustomerService) { }
+  constructor(private customerService: CustomerService) {
+    this.searchText = '';
+  }
 
   ngOnInit(): void {
     this.getCustomers();

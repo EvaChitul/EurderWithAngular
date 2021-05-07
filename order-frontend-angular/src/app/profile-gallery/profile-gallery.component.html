@@ -1,14 +1,29 @@
+<h2>Items</h2>
 <div class="container-fluid">
   <div class="row">
     <div id="gallery" class="col-md-9">
       <div class="gallery">
-        <div class="gallery-pet fader" *ngFor = "let item of items">
+        <div class="gallery-pet fader" *ngFor="let item of items | itemNameFilter: searchText">
           <img class="profile-picture" [src]="'https://pettinder.herokuapp.com/images/kamiel.jpg'">
           <div class="overlay">
-            <div class="overlay-text">{{item.name}} ${{item.price}}</div>
+            <div class="overlay-text">{{item.name}} Price: €{{item.price}} </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
+
+<div class="col-md-3">
+  <section class="tiny-dialog">
+    <h3>Find item</h3>
+    <div class="form-group">
+      <label for="name">Items</label>
+      <input id="name"
+             name="name"
+             class="form-control"
+             placeholder="Filter by name"
+             [(ngModel)]="searchText">
+    </div>
+  </section>
 </div>
